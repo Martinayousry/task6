@@ -1,0 +1,53 @@
+.spinner {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 30px;
+  margin: 7px;
+  animation-name: circle-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out
+
+}
+.circle1 {
+  animation-delay: 0.2s;
+}
+.circle2 {
+  animation-delay: 0.4s;
+}
+.circle3 {
+  animation-delay: 0.6s;
+}
+.circle4 {
+  animation-delay: 0.8s;
+}
+.circle5 {
+  animation-delay: 1s;
+}
+
+@keyframes circle-animation {
+  0% {
+    background-color: aqua;
+    scale: 10%;
+  }
+  25% {
+    background-color: aquamarine;
+    scale: 20%;
+  }
+  50% {
+    background-color: lightskyblue;
+    scale: 40%;
+  }
+  100% {
+    background-color: blue;
+    scale: 60%;
+  }
+}
